@@ -4,6 +4,10 @@ An end-to-end analytics project that combines SQL, Python, and Power BI to analy
 
 The project identifies the operational drivers of negative customer experiences, validates analytical assumptions through exploratory analysis, and translates the findings into an interactive business dashboard with actionable recommendations.
 
+<p align="center">
+  <img src="images/workflow.png" width="100%">
+</p>
+
 ---
 
 ## 📊 Project Snapshot
@@ -102,10 +106,11 @@ project/
 │   └── 03_customer_segmentation_validation.ipynb
 │
 ├── powerbi/
-│   └── Olist_Customer_Dissatisfaction_Dashboard.pbix
+│   └── PBIX available upon request
 │
 ├── report/
 │   └── Olist_Report.pdf
 │
 └── README.md
 ```
+*Power BI (.pbix) file is available upon request due to GitHub file size limitations.*
