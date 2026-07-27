@@ -1,6 +1,8 @@
 # 🔍 Olist Customer Dissatisfaction Analysis
 
-A Power BI dashboard that analyzes customer dissatisfaction on the Olist platform — identifying the operational drivers of negative customer experiences and prioritizing improvement initiatives based on customer business value.
+An end-to-end analytics project that combines SQL, Python, and Power BI to analyze customer dissatisfaction on the Olist platform.
+
+The project identifies the operational drivers of negative customer experiences, validates analytical assumptions through exploratory analysis, and translates the findings into an interactive business dashboard with actionable recommendations.
 
 ---
 
@@ -12,7 +14,7 @@ A Power BI dashboard that analyzes customer dissatisfaction on the Olist platfor
 | **Dataset**         | Brazilian E-Commerce Public Dataset by Olist          |
 | **Scale**           | 99K+ Orders · 96K+ Customers                          |
 | **Analysis Period** | Sep 2016 – Aug 2018                                   |
-| **Tools**           | Power BI · Power Query · DAX                          |
+| **Tools**           | SQL Server · Python · Power BI                        |
 | **Focus**           | Customer Experience Analytics · Operational Analytics |
 
 ---
@@ -70,21 +72,40 @@ North and Northeast Brazil consistently underperform São Paulo in both delivery
 
 ## 🛠 Technical Highlights
 
+- **Built an end-to-end analytics workflow** using SQL Server, Python, and Power BI.
+
+- **Designed a SQL data-cleaning pipeline** to standardize raw Olist tables, remove duplicate reviews, engineer analytical features, and generate reusable analytical tables.
+
+- **Conducted exploratory data analysis (EDA) in Python** to validate business assumptions, identify delivery-risk thresholds, and investigate operational drivers of customer dissatisfaction.
+
+- **Diagnosed the limitations of classical RFM segmentation** and validated a rule-based customer segmentation approach using **K-Means clustering**.
+
 - **Built a multi-fact dimensional data analytical model** to support cross-functional analysis across orders, reviews, sellers, products, payments, and logistics data.
 
 - **Developed custom DAX measures** to support customer satisfaction analysis, customer value segmentation, delivery performance monitoring, and seller/category risk identification.
 
-- **Developed a rule-based customer value segmentation framework** adapted from RFM principles and validated against K-Means clustering to prioritize high-impact customer groups while maintaining business interpretability.
-
-- **Implemented risk-tiering logic** with minimum-volume thresholds to reduce false positives when identifying high-risk sellers (≥50 orders) and product categories (≥100 orders).
-
-- **Designed benchmark-based regional performance analysis** comparing underperforming states (e.g., AL, MA, CE) against São Paulo (SP), the platform's delivery-performance benchmark with a 5.9% late-delivery rate.
-
-- **Applied an Impact-vs-Effort prioritization framework** to translate analytical findings into actionable business recommendations.
+- **Applied benchmark-based regional analysis and an Impact-vs-Effort prioritization framework** to translate analytical findings into actionable business recommendations.
 
 ---
 
-## 📂 Project Files
+## 📂 Project Structure
 
-- ```Olist_Report.pdf``` – Dashboard report for quick viewing.
-- ```Olist_Customer_Dissatisfaction_Dashboard.pbix``` – available upon request.
+```text
+project/
+│
+├── sql/
+│   └── 01_clean_data.sql
+│
+├── python/
+│   ├── 01_data_cleaning_validation.ipynb
+│   ├── 02_eda_dissatisfaction_drivers.ipynb
+│   └── 03_customer_segmentation_validation.ipynb
+│
+├── powerbi/
+│   └── Olist_Customer_Dissatisfaction_Dashboard.pbix
+│
+├── report/
+│   └── Olist_Report.pdf
+│
+└── README.md
+```
