@@ -27,7 +27,7 @@ The project identifies the operational drivers of negative customer experiences,
 
 🔗 [View the live dashboard](https://lnkd.in/gea766am)
 
-![Executive Overview](images/page1_overview.jpg)
+![Executive Overview](images/page1-overview.jpg)
 
 ---
 
@@ -97,20 +97,20 @@ North and Northeast Brazil consistently underperform São Paulo in both delivery
 ```text
 project/
 │
+├── data/
+│
+├── images/
+│
 ├── sql/
-│   └── 01_clean_data.sql
+│   └── 01-clean-data.sql
 │
-├── python/
-│   ├── 01_data_cleaning_validation.ipynb
-│   ├── 02_eda_dissatisfaction_drivers.ipynb
-│   └── 03_customer_segmentation_validation.ipynb
+├── notebooks/
+│   ├── 01-data-quality-and-structure.ipynb
+│   ├── 02-eda-dissatisfaction-drivers.ipynb
+│   └── 03-segmentation-validation.ipynb
 │
-├── powerbi/
-│   └── PBIX available upon request
+├── dashboard-preview.pdf
 │
-├── report/
-│   └── Olist_Report.pdf
-│
-└── README.md
+├── README.md
+└── LICENSE
 ```
-*Power BI (.pbix) file is available upon request due to GitHub file size limitations.*
