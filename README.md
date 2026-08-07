@@ -95,22 +95,22 @@ North and Northeast Brazil consistently underperform São Paulo in both delivery
 ## 📂 Project Structure
 
 ```text
-project/
+olist-customer-dissatisfaction-analysis/
 │
-├── data/
+├── data/                          # Original Olist datasets
 │
-├── images/
+├── images/                        # Images used in the project documentation
 │
 ├── sql/
-│   └── 01-clean-data.sql
+│   └── 01-clean-data.sql          # SQL scripts for data cleaning and preparation
 │
 ├── notebooks/
-│   ├── 01-data-quality-and-structure.ipynb
-│   ├── 02-eda-dissatisfaction-drivers.ipynb
-│   └── 03-segmentation-validation.ipynb
+│   ├── 01-data-quality-and-structure.ipynb      # Data quality assessment and dataset overview
+│   ├── 02-eda-dissatisfaction-drivers.ipynb     # Exploratory analysis of customer dissatisfaction drivers
+│   └── 03-segmentation-validation.ipynb         # Customer segmentation analysis and validation
 │
-├── dashboard-preview.pdf
+├── dashboard-preview.pdf          # Exported dashboard pages for quick preview
 │
-├── README.md
-└── LICENSE
+├── README.md                      # Project overview, methodology, insights, and dashboard showcase
+└── LICENSE                        # MIT License
 ```
