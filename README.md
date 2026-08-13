@@ -48,13 +48,13 @@ This project aims to answer:
 
 ### 🚚 Delivery Performance
 Delivery delay is the strongest driver of customer dissatisfaction.
-* Orders delivered after **35+ days** receive **9.5×** more negative reviews than orders delivered within 7 days.
+* Orders delivered after **36+ days** receive **9.5×** more negative reviews than orders delivered within 7 days.
 * More than **11,600 orders** exceeded the 21-day delivery risk threshold.
 
 ### 👥 Customer Value Segmentation
 Customer dissatisfaction does not affect all customers equally.
-* Only **21% of customers generate 48.2% of total revenue**.
-* High-value customer segments exhibit distinct dissatisfaction patterns, requiring differentiated improvement strategies.
+* High-Value Prospects represent around **18% of customers** and **44.8% of total revenue**, making them a key customer group for retention and service improvement.
+* At-Risk Loyalists show the highest dissatisfaction rate at **19.2%**, despite representing only **5.5% of revenue**.
 
 ### 🛍 Seller & Product Quality
 Customer dissatisfaction is concentrated among a relatively small group of sellers and product categories, enabling targeted quality improvement instead of platform-wide interventions.
@@ -97,20 +97,20 @@ North and Northeast Brazil consistently underperform São Paulo in both delivery
 ```text
 olist-customer-dissatisfaction-analysis/
 │
-├── data/                          # Original Olist datasets
+├── data/
+│   ├── data_raw/                    # Original Olist datasets
+│   └── data_clean/                  # Cleaned datasets prepared for analysis
 │
-├── images/                        # Images used in the project documentation
+├── images/                          # Images used in the project documentation
 │
 ├── sql/
-│   └── 01-clean-data.sql          # SQL scripts for data cleaning and preparation
+│   └── olist_data_preparation.sql   # SQL scripts for data preparation
 │
 ├── notebooks/
-│   ├── 01-data-quality-and-structure.ipynb      # Data quality assessment and dataset overview
-│   ├── 02-eda-dissatisfaction-drivers.ipynb     # Exploratory analysis of customer dissatisfaction drivers
-│   └── 03-segmentation-validation.ipynb         # Customer segmentation analysis and validation
+│   └── olist_dissatisfaction.ipynb  # EDA and customer dissatisfaction analysis
 │
-├── dashboard-preview.pdf          # Exported dashboard pages for quick preview
+├── dashboard-preview.pdf            # Exported dashboard pages for quick preview
 │
-├── README.md                      # Project overview, methodology, insights, and dashboard showcase
-└── LICENSE                        # MIT License
+├── README.md                        # Project overview, methodology, insights, and dashboard showcase
+└── LICENSE                          # MIT License
 ```
