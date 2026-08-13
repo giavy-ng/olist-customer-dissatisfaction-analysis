@@ -27,7 +27,7 @@ The project identifies the operational drivers of negative customer experiences,
 
 🔗 [View the live dashboard](https://lnkd.in/gea766am)
 
-![Executive Overview](images/page1_overview.jpg)
+![Executive Overview](images/page1-overview.jpg)
 
 ---
 
@@ -95,22 +95,22 @@ North and Northeast Brazil consistently underperform São Paulo in both delivery
 ## 📂 Project Structure
 
 ```text
-project/
+olist-customer-dissatisfaction-analysis/
+│
+├── data/                          # Original Olist datasets
+│
+├── images/                        # Images used in the project documentation
 │
 ├── sql/
-│   └── 01_clean_data.sql
+│   └── 01-clean-data.sql          # SQL scripts for data cleaning and preparation
 │
-├── python/
-│   ├── 01_data_cleaning_validation.ipynb
-│   ├── 02_eda_dissatisfaction_drivers.ipynb
-│   └── 03_customer_segmentation_validation.ipynb
+├── notebooks/
+│   ├── 01-data-quality-and-structure.ipynb      # Data quality assessment and dataset overview
+│   ├── 02-eda-dissatisfaction-drivers.ipynb     # Exploratory analysis of customer dissatisfaction drivers
+│   └── 03-segmentation-validation.ipynb         # Customer segmentation analysis and validation
 │
-├── powerbi/
-│   └── PBIX available upon request
+├── dashboard-preview.pdf          # Exported dashboard pages for quick preview
 │
-├── report/
-│   └── Olist_Report.pdf
-│
-└── README.md
+├── README.md                      # Project overview, methodology, insights, and dashboard showcase
+└── LICENSE                        # MIT License
 ```
-*Power BI (.pbix) file is available upon request due to GitHub file size limitations.*
