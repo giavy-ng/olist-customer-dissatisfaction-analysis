@@ -25,7 +25,7 @@ The project identifies the operational drivers of negative customer experiences,
 
 ## 📈 Dashboard Preview
 
-🔗 [View the live dashboard](https://lnkd.in/gea766am)
+🔗 [View the live dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjU4OWI3YWEtYTc4My00ZmMzLWI5YzctOWYwYTg2ODUyZTZhIiwidCI6ImFmMWYzNzUzLTM5MjUtNGU2Zi05NDliLTk3YzAwNzMyMDgwMyIsImMiOjEwfQ%3D%3D&pageName=2d51010d1032535a85ae)
 
 ![Executive Overview](images/page1-overview.jpg)
 
